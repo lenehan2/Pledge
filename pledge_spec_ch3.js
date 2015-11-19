@@ -36,7 +36,7 @@ describe('Another promise', function(){
 
   describe('that is not yet rejected', function(){
 
-    xit('does not call error handlers yet', function(){
+    it('does not call error handlers yet', function(){
       promiseForThing.then( null, fn.logOops );
       expect( fn.logOops ).not.toHaveBeenCalled();
     });
